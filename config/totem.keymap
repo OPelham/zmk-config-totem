@@ -19,9 +19,9 @@
 #define COLEMAK 0
 #define SYMBOLS 1
 #define NUMBERS 2
-#define FUNCTIONS  3
+#define FUNCTIONS 3
 //#define MOUSE 4
-#define GAME 5
+//#define GAME 5
 
 &mt {
   quick-tap-ms = <100>;
@@ -36,15 +36,15 @@
 
         function_layer_combo {
             bindings = <&mo FUNCTIONS>;
-            key-positions = <33 34>; //inner thumb keys
+            key-positions = <33 3>; //inner thumb keys
             timeout-ms = <50>;
         };
 
-        game_layer_combo {
-            bindings = <&tog GAME>;
-            key-positions = <0 1 2 3>;
-            timeout-ms = <50>;
-        };
+//        game_layer_combo {
+//            bindings = <&tog GAME>;
+//            key-positions = <0 1 2 3>;
+//            timeout-ms = <50>;
+//        };
 
         repeat_key_combo {
             bindings = <&key_repeat>;
@@ -204,9 +204,9 @@ label= "FUNCTIONS"                          ;
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 
-                game_layer {
+//                game_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "GAME"                              ;
+//label= "GAME"                              ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃    ESC    ┃     Q     ┃     W     ┃     E     ┃     R     ┃   ┃     T     ┃     Y     ┃     U     ┃     I     ┃     O     ┃
@@ -217,14 +217,14 @@ label= "GAME"                              ;
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃    TAB    ┃   SPACE   ┃   ┃    BSPC   ┃   ENTER   ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
- bindings = <
+// bindings = <
 //      ╷               ╷               ╷               ╷               ╷               ╷               ╷       ╷               ╷               ╷               ╷               ╷               ╷               ╷
-
-                        &kp ESC         &kp Q           &kp W           &kp E           &kp R                   &trans          &kp F7          &kp F8          &kp F9          &kp F12
-                        &trans          &kp LS(LEFT)    &kp LC(F17)     &kp LS(RIGHT)   &kp RET                 &trans          &kp F4          &kp F5          &kp F6          &kp F11  
-        &trans          &kp J           &kp LS(C)       &kp LC(F16)     &kp LS(V)       &kp LC(F15)             &trans          &kp F1          &kp F2          &kp F3          &kp F10         &trans         
-                                                        &trans          &kp LC(F12)     &kp LC(F11)             &trans          &trans          &trans      
-                        >;
-                };
-        };
-};
+//
+//                        &kp ESC         &kp Q           &kp W           &kp E           &kp R                   &trans          &kp F7          &kp F8          &kp F9          &kp F12
+//                        &trans          &kp LS(LEFT)    &kp LC(F17)     &kp LS(RIGHT)   &kp RET                 &trans          &kp F4          &kp F5          &kp F6          &kp F11  
+//        &trans          &kp J           &kp LS(C)       &kp LC(F16)     &kp LS(V)       &kp LC(F15)             &trans          &kp F1          &kp F2          &kp F3          &kp F10         &trans         
+//                                                        &trans          &kp LC(F12)     &kp LC(F11)             &trans          &trans          &trans      
+//                        >;
+//                };
+//        };
+//};
