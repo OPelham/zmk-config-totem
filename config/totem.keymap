@@ -34,7 +34,7 @@
 
         function_layer_combo {
             bindings = <&mo FUNCTIONS>;
-            key-positions = <33 3>; //inner thumb keys
+            key-positions = <33 34>; //inner thumb keys
             timeout-ms = <50>;
         };
 
