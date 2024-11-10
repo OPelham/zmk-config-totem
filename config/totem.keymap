@@ -20,8 +20,8 @@
 #define SYMBOLS 1
 #define NUMBERS 2
 #define FUNCTIONS 3
-//#define MOUSE 4
-//#define GAME 5
+// #define MOUSE 4
+// #define GAME 5
 
 &mt {
   quick-tap-ms = <100>;
@@ -226,5 +226,5 @@ label= "FUNCTIONS"                          ;
 //                                                        &trans          &kp LC(F12)     &kp LC(F11)             &trans          &trans          &trans      
 //                        >;
 //                };
-//        };
-//};
+        };
+};
