@@ -17,7 +17,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define COLEMAK 0
-//#define SYMBOLS  1
+#define SYMBOLS  1
 #define SYM  2
 #define ADJ  3
 #define TVP1 4
@@ -65,7 +65,7 @@
 
                 base_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "COLEMAK"                              ;
+label= "COLEMAK"                           ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     Q     ┃     W     ┃     F     ┃     P     ┃     B     ┃   ┃     J     ┃     L     ┃     U     ┃     Y     ┃     ;     ┃
@@ -89,9 +89,9 @@ label= "COLEMAK"                              ;
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 
-//                symbols_layer {
+                symbols_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-//label= "SYMBOLS"                           ;
+label= "SYMBOLS"                           ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     ~     ┃     &     ┃     (     ┃     )     ┃           ┃   ┃           ┃     +     ┃     [     ┃     ]     ┃     \     ┃
@@ -102,15 +102,15 @@ label= "COLEMAK"                              ;
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-// bindings = <
+ bindings = <
 //      ╷               ╷               ╷               ╷               ╷               ╷               ╷   ╷                   ╷               ╷               ╷               ╷               ╷               ╷
 //
-//                        &kp TILDE       &bt AMPS        &kp LPAR        &kp RPAR        &trans               &trans             &kp PLUS        &kp LBKT        &kp RBKT        &kp BSLH
-//                        &mt LSHFT GRAVE &mt LCTRL DLLR  &mt LALT PRCNT  &mt LGUI CARET  &trans               &kp EQUAL          &mt RGUI MINUS  &mt RALT LBRC   &mt RCTRL RBRC  &mt RSHFT SQT
-//        &trans          &kp STAR        &kp EXCL        &kp AT          &kp HASH        &trans               &trans             &kp UNDER       &kp LT          &kp GT          &kp DOT         &trans      
-//                                                        &trans          &trans          &trans               &trans             &trans          &trans      
-//                        >;
-//                };
+                        &kp TILDE       &bt AMPS        &kp LPAR        &kp RPAR        &trans               &trans             &kp PLUS        &kp LBKT        &kp RBKT        &kp BSLH
+                        &mt LSHFT GRAVE &mt LCTRL DLLR  &mt LALT PRCNT  &mt LGUI CARET  &trans               &kp EQUAL          &mt RGUI MINUS  &mt RALT LBRC   &mt RCTRL RBRC  &mt RSHFT SQT
+        &trans          &kp STAR        &kp EXCL        &kp AT          &kp HASH        &trans               &trans             &kp UNDER       &kp LT          &kp GT          &kp DOT         &trans      
+                                                        &trans          &trans          &trans               &trans             &trans          &trans      
+                        >;
+                };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
