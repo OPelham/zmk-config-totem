@@ -17,7 +17,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define COLEMAK 0
-#define SYMBOLS  1
+//#define SYMBOLS  1
 #define SYM  2
 #define ADJ  3
 #define TVP1 4
@@ -82,16 +82,16 @@ label= "COLEMAK"                              ;
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
                 &mt LSHFT A &mt LCTRL R &mt LALT S  &mt LGUI T  &kp G           &kp M       &mt RGUI N  &mt RALT E  &mt RCTRL I &mt RSHFT O
     &kp Q       &kp Z       &kp X       &kp K       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
-                                        &kp DEL     &lt 1 TAB   &kp SPACE       &kp BSPC    &mt LC(LS(LALT)) RET    &kp ESC
+                                        &kp DEL     &kp TAB   &kp SPACE       &kp BSPC    &mt LC(LS(LALT)) RET    &kp ESC
                         >;
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 
-                symbols_layer {
+//                symbols_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "SYMBOLS"                           ;
+//label= "SYMBOLS"                           ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     ~     ┃     &     ┃     (     ┃     )     ┃           ┃   ┃           ┃     +     ┃     [     ┃     ]     ┃     \     ┃
@@ -102,15 +102,15 @@ label= "SYMBOLS"                           ;
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
- bindings = <
+// bindings = <
 //      ╷               ╷               ╷               ╷               ╷               ╷               ╷   ╷                   ╷               ╷               ╷               ╷               ╷               ╷
 //
-                        &kp TILDE       &bt AMPS        &kp LPAR        &kp RPAR        &trans               &trans             &kp PLUS        &kp LBKT        &kp RBKT        &kp BSLH
-                        &mt LSHFT GRAVE &mt LCTRL DLLR  &mt LALT PRCNT  &mt LGUI CARET  &trans               &kp EQUAL          &mt RGUI MINUS  &mt RALT LBRC   &mt RCTRL RBRC  &mt RSHFT SQT
-        &trans          &kp STAR        &kp EXCL        &kp AT          &kp HASH        &trans               &trans             &kp UNDER       &kp LT          &kp GT          &kp DOT         &trans      
-                                                        &trans          &trans          &trans               &trans             &trans          &trans      
-                        >;
-                };
+//                        &kp TILDE       &bt AMPS        &kp LPAR        &kp RPAR        &trans               &trans             &kp PLUS        &kp LBKT        &kp RBKT        &kp BSLH
+//                        &mt LSHFT GRAVE &mt LCTRL DLLR  &mt LALT PRCNT  &mt LGUI CARET  &trans               &kp EQUAL          &mt RGUI MINUS  &mt RALT LBRC   &mt RCTRL RBRC  &mt RSHFT SQT
+//        &trans          &kp STAR        &kp EXCL        &kp AT          &kp HASH        &trans               &trans             &kp UNDER       &kp LT          &kp GT          &kp DOT         &trans      
+//                                                        &trans          &trans          &trans               &trans             &trans          &trans      
+//                        >;
+//                };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
