@@ -89,7 +89,7 @@ label= "COLEMAK"                           ;
                 &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
                 &mt LSHFT A &mt LCTRL R &mt LALT S  &mt LGUI T  &kp G           &kp M       &mt RGUI N  &mt RALT E  &mt RCTRL I &mt RSHFT O
     &kp Q       &kp Z       &kp X       &kp K       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
-                                        &kp DEL     &kp TAB  &lt SYMBOLS SPACE  &lt SYMBOLS BSPC  &mt LC(LS(LALT)) RET     &kp ESC
+                                        &kp DEL     &kp TAB     &lt 1 SPACE     &lt 1 BSPC  &mt LC(LS(LALT)) RET     &kp ESC
                         >;
                 };
 
