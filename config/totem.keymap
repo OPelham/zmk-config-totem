@@ -18,7 +18,7 @@
 
 #define COLEMAK 0
 #define SYMBOLS  1
-#define SYM  2
+#define NUMBERS  2
 #define ADJ  3
 #define TVP1 4
 #define TVP2 5
@@ -82,7 +82,7 @@ label= "COLEMAK"                           ;
                         &kp Q           &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI
                         &mt LSHFT A     &mt LCTRL R     &mt LALT S      &mt LGUI T      &kp G                   &kp M           &mt RGUI N      &mt RALT E      &mt RCTRL I     &mt RSHFT O
         &kp Q           &kp Z           &kp X           &kp K           &kp D           &kp V                   &kp K           &kp H           &kp COMMA       &kp DOT         &kp FSLH        &kp BSLH
-                                                        &kp DEL         &lt SYMBOLS TAB &kp SPACE               &kp BSPC        &mt LC(LS(LALT)) RET    &kp ESC
+                                                        &kp DEL         &lt SYMBOLS TAB &lt NUMBERS SPACE       &kp BSPC        &mt LC(LS(LALT)) RET    &kp ESC
                         >;
                 };
 
@@ -117,26 +117,27 @@ label= "SYMBOLS"                           ;
 
                 sim_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "SYM"                               ;
+label= "NUMBERS"                           ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃     !     ┃     @     ┃     #     ┃     $     ┃     %     ┃   ┃     ˆ     ┃     &     ┃     Ü     ┃     '     ┃     "     ┃
+//             ┃     :     ┃     7     ┃     8     ┃     9     ┃           ┃   ┃    ESC    ┃   INSERT  ┃    UP     ┃           ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃     Ä     ┃           ┃    SZ     ┃           ┃           ┃   ┃   MUTE    ┃   YEN     ┃   EURO    ┃  POUND    ┃     Ö     ┃
+//             ┃     .     ┃     4     ┃     5     ┃     6     ┃           ┃   ┃   CAPS    ┃    LEFT   ┃   DOWN    ┃    UP     ┃   RIGHT   ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃  EMAIL1   ┃  EMAIL2   ┃           ┃           ┃           ┃   ┃   VOL-    ┃   VOL+    ┃   LAST    ┃   NEXT    ┃     \     ┃           ┃
+// ┃           ┃     0     ┃     1     ┃     2     ┃     3     ┃           ┃   ┃ CAPS WRD  ┃    HOME   ┃  PG DOWN  ┃   PG UP   ┃    END    ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃    GIF    ┃    ADJ    ┃   ┃           ┃           ┃           ┃
+//                                     ┃           ┃  &kp N0   ┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
-// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-
-                &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS    &kp RA(U)   &kp SQT     &kp DQT       
-                &kp RA(A)   &trans      &kp RA(S)   &trans      &trans          &kp C_MUTE  &kp LS(RA(N4)) &kp RA(N5) &kp RA(N4)   &kp RA(O) 
-    &trans      &kp RA(F18) &kp RA(F19) &trans      &trans      &trans          &kp C_VOL_DN &kp C_VOL_UP &kp C_PREV &kp C_NEXT  &kp BSLH   &trans         
-                                        &trans      &gif        &mo ADJ         &trans      &kp C_PP    &trans      
+//      ╷               ╷               ╷               ╷               ╷               ╷               ╷       ╷               ╷               ╷               ╷               ╷               ╷               ╷
+//
+                        &kp COLON       &kp N7          &kp N8          &kp N0          &trans                  &kp ESC         &kp INS         &kp UARW        &trans          &trans       
+                        &mt LSHFT DOT   &mt LCTRL N4    &mt LALT N5     &mt LGUI N6     &trans                  &kp CAPS        &mt RGUI LARW   &mt RALT DARW   &mt RCTRL UARW  &mt RSHFT RARW 
+        &trans          &kp N0          &kp N1          &kp N2          &kp N3          &trans                  &caps_word      &kp HOME        &kp PG_DN       &kp PG_UP       &kp END         &trans         
+                                                        &trans          &kp N0          &trans                  &trans          &trans          &trans      
                         >;
                 };
+
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
