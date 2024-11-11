@@ -163,7 +163,7 @@ label= "NUMBERS"                           ;
                         &kp COLON       &kp N7          &kp N8          &kp N0          &trans                  &kp ESC         &kp INS         &kp UARW        &trans          &trans       
                         &mt LSHFT DOT   &mt LCTRL N4    &mt LALT N5     &mt LGUI N6     &trans                  &kp CAPS        &mt RGUI LARW   &mt RALT DARW   &mt RCTRL UARW  &mt RSHFT RARW 
         &trans          &kp N0          &kp N1          &kp N2          &kp N3          &trans                  &caps_word      &kp HOME        &kp PG_DN       &kp PG_UP       &kp END         &trans         
-                                                        &trans          &kp N0          &trans                  &trans          &trans          &trans      
+                                                        &trans          &lt MOUSE N0    &trans                  &trans          &trans          &trans      
                         >;
                 };
 
@@ -190,7 +190,7 @@ label= "FUNCTIONS"                         ;
                         &kp F12         &kp F7          &kp F8          &kp F9          &bt BT_SEL 0            &trans          &kp F19         &kp F20         &kp F21         &kp F22      
                         &kp F11         &kp F4          &kp F5          &kp F6          &bt BT_SEL 1            &trans          &kp F16         &kp F17         &kp F18         &kp F23     
         &trans          &kp F10         &kp F1          &kp F2          &kp F3          &bt BT_SEL 2            &trans          &kp F13         &kp F14         &kp F15         &bt BT_CLR      &trans         
-                                                        &trans          &trans          &trans                  &trans          &trans          &trans      
+                                                        &trans          &lt MOUSE TAB   &trans                  &trans          &trans          &trans      
                         >;
                 };
 
