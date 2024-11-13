@@ -128,7 +128,7 @@ label= "SYMBOLS"                           ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃     *     ┃     !     ┃     @     ┃     #     ┃           ┃   ┃           ┃     _     ┃     <     ┃     >     ┃     /     ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
+//                                     ┃           ┃           ┃           ┃   ┃    DEL    ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 //      ╷               ╷               ╷               ╷               ╷               ╷               ╷   ╷                   ╷               ╷               ╷               ╷               ╷               ╷
@@ -136,7 +136,7 @@ label= "SYMBOLS"                           ;
                         &kp TILDE       &kp AMPS        &kp LPAR        &kp RPAR        &trans               &trans             &kp PLUS        &kp LBKT        &kp RBKT        &kp BSLH
                         &mt LSHFT GRAVE &mt LCTRL DLLR  &mt LALT PRCNT  &mt LGUI CARET  &trans               &kp EQUAL          &mt RGUI MINUS  &mt RALT LBRC   &mt RCTRL RBRC  &mt RSHFT SQT
         &trans          &kp STAR        &kp EXCL        &kp AT          &kp HASH        &trans               &trans             &kp UNDER       &kp LT          &kp GT          &kp DOT         &trans      
-                                                        &trans          &trans          &trans               &trans             &trans          &trans      
+                                                        &trans          &trans          &trans               &lt NUMBERS DEL    &trans          &trans      
                         >;
                 };
 
