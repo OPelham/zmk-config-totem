@@ -204,7 +204,7 @@ label= "MOUSE"                             ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃           ┃     m4    ┃     m5    ┃           ┃           ┃   ┃           ┃           ┃   m up    ┃           ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃     m3    ┃     m2    ┃     m1    ┃           ┃   ┃           ┃   m left  ┃   m down  ┃  m right  ┃           ┃
+//             ┃           ┃     m2    ┃     m3    ┃     m1    ┃           ┃   ┃           ┃   m left  ┃   m down  ┃  m right  ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃   s left  ┃   s up    ┃  s down   ┃  s right  ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -214,7 +214,7 @@ label= "MOUSE"                             ;
 // ╷                    ╷               ╷               ╷               ╷               ╷               ╷       ╷               ╷               ╷               ╷               ╷               ╷               ╷
 
                         &trans          &mkp MB4        &mkp MB5        &trans          &trans                  &trans          &trans          &mmv MOVE_UP    &trans          &trans   
-                        &trans          &mkp MB3        &mkp MB2        &mkp MB1        &trans                  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans      
+                        &trans          &mkp MB2        &mkp MB3        &mkp MB1        &trans                  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans      
         &trans          &trans          &trans          &trans          &trans          &trans                  &trans        &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_LEFT  &trans   
                                                         &trans          &trans          &trans                  &trans          &trans          &trans  
                         >;
