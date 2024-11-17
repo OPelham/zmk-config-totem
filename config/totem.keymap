@@ -85,7 +85,7 @@
 
         repeat_key_combo {
             bindings = <&key_repeat>;
-            key-positions = <26 27>; //bottom right inner and index
+            key-positions = <27 28>; //bottom right index and middle
             timeout-ms = <50>;
         };
 
