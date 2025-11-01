@@ -23,6 +23,7 @@
 #define FUNCTIONS 3
 #define MOUSE     4
 #define GAME      5
+#define GAME_NUM  6
 
 
 // Mouse config
@@ -247,9 +248,35 @@ label= "GAME"                              ;
                         &kp ESC         &kp Q           &kp W           &kp E           &kp R                   &kp T           &kp Y           &kp U           &kp I           &kp O
                         &kp LSHFT       &kp A           &kp S           &kp D           &kp F                   &kp G           &kp H           &kp J           &kp K           &kp L      
         &trans          &kp LCTRL       &kp Z           &kp X           &kp C           &kp V                   &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         &kp P
-                                                        &trans         &trans          &trans                  &trans          &trans          &mo NUMBERS
+                                                        &trans          &trans          &trans                  &trans          &trans          &mo NUMBERS
                         >;
                 };
+
+// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
+
+                game_numbers_layer {
+// ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+label= "GAME_NUM"                              ;
+//             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+//             ┃     :     ┃     7     ┃     8     ┃     9     ┃           ┃   ┃    ESC    ┃   INSERT  ┃    UP     ┃           ┃           ┃
+//             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+//             ┃     .     ┃     4     ┃     5     ┃     6     ┃           ┃   ┃   CAPS    ┃    LEFT   ┃   DOWN    ┃    UP     ┃   RIGHT   ┃
+// ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
+// ┃           ┃     0     ┃     1     ┃     2     ┃     3     ┃           ┃   ┃ CAPS WRD  ┃    HOME   ┃  PG DOWN  ┃   PG UP   ┃    END    ┃           ┃
+// ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+//                                     ┃           ┃  &kp N0   ┃           ┃   ┃           ┃           ┃           ┃
+//                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+ bindings = <
+//      ╷               ╷               ╷               ╷               ╷               ╷               ╷       ╷               ╷               ╷               ╷               ╷               ╷               ╷
+//
+                        &kp COLON       &kp N7          &kp N8          &kp N9          &trans                  &kp ESC         &kp INS         &kp UARW        &trans          &trans       
+                        &mt LSHFT DOT   &mt LCTRL N4    &mt LALT N5     &mt LGUI N6     &trans                  &kp CAPS        &mt RGUI LARW   &mt RALT DARW   &mt RCTRL UARW  &mt RSHFT RARW 
+        &trans          &kp N0          &kp N1          &kp N2          &kp N3          &trans                  &caps_word      &kp HOME        &kp PG_DN       &kp PG_UP       &kp END         &trans         
+                                                        &trans          &lt MOUSE N0    &trans                  &trans          &trans          &trans      
+                        >;
+                };
+
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
