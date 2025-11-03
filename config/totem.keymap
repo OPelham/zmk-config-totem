@@ -220,7 +220,7 @@ label= "MOUSE"                             ;
 
                         &trans          &mkp MB4        &mkp MB5        &trans          &trans                  &trans          &trans          &mmv MOVE_UP    &trans          &trans   
                         &trans          &mkp MB2        &mkp MB3        &mkp MB1        &trans                  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans      
-        &trans          &trans          &trans          &trans          &trans          &trans                  &trans        &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_LEFT  &trans   
+        &trans          &trans          &trans          &trans          &trans          &trans                  &trans          &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_LEFT  &trans   
                                                         &trans          &trans          &trans                  &trans          &trans          &trans  
                         >;
                 };
@@ -248,7 +248,7 @@ label= "GAME"                              ;
                         &kp ESC         &kp Q           &kp W           &kp E           &kp R                   &kp T           &kp Y           &kp U           &kp I           &kp O
                         &kp LSHFT       &kp A           &kp S           &kp D           &kp F                   &kp G           &kp H           &kp J           &kp K           &kp L      
         &trans          &kp LCTRL       &kp Z           &kp X           &kp C           &kp V                   &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         &kp P
-                                                        &trans          &trans          &trans                  &trans          &trans          &mo GAME_NUM
+                                                        &trans          &trans      &lt GAME_SYMBOLS SPACE    &lt GAME_NUM BSPC   &trans       &mo GAME_NUM
                         >;
                 };
 
@@ -276,6 +276,32 @@ label= "GAME_NUM"                              ;
                                                         &trans          &lt MOUSE N0    &trans                  &trans          &trans          &trans      
                         >;
                 };
+
+
+// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
+
+                game_symbols_layer {
+// ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+label= "GAME_SYMBOLS"                      ;
+//             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+//             ┃    F12    ┃    F7     ┃    F8     ┃    F9     ┃           ┃   ┃           ┃    F19    ┃    F20    ┃    F21    ┃    F24    ┃
+//             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+//             ┃    F11    ┃    F4     ┃    F5     ┃    F6     ┃           ┃   ┃           ┃    F16    ┃    F17    ┃    F18    ┃    F23    ┃
+// ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
+// ┃           ┃    F10    ┃    F1     ┃    F2     ┃    F3     ┃           ┃   ┃           ┃    F13    ┃    F14    ┃    F15    ┃    F22    ┃           ┃
+// ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+//                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
+//                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+ bindings = <
+//      ╷               ╷               ╷               ╷               ╷               ╷               ╷       ╷               ╷               ╷               ╷               ╷               ╷               ╷
+
+                        &kp F12         &kp F7          &kp F8          &kp F9          &trans                  &trans          &kp F19         &kp F20         &kp F21         &kp F24      
+                        &kp F11         &kp F4          &kp F5          &kp F6          &trans                  &trans          &kp F16         &kp F17         &kp F18         &kp F23     
+        &trans          &kp F10         &kp F1          &kp F2          &kp F3          &trans                  &trans          &kp F13         &kp F14         &kp F15         &kp F22         &trans         
+                                                        &trans          &trans          &trans                  &trans          &trans          &trans      
+                        >;
+                };      
 
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
